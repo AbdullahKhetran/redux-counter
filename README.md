@@ -2,7 +2,8 @@ This is an attempt at learning [Redux](https://redux.js.org/) by making a simple
 
 Redux [documentation](https://redux.js.org/tutorials/quick-start) has been used for initial setup
 
-The project is deployed [here]() using [vercel](https://vercel.com)
+### The project is deployed [here](https://redux-counter-one-blue.vercel.app/) using [vercel](https://vercel.com)
+
 
 
 ## Running locally
