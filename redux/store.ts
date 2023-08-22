@@ -1,7 +1,8 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import counterReducer from "./features/counter/counterSlice"
 import { persistReducer, persistStore } from "redux-persist";
-import storage from "redux-persist/lib/storage"
+// import storage from "redux-persist/lib/storage"
+import storage from "./utils";
 
 const persistConfig = {
     key: "root",
