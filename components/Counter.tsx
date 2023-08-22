@@ -1,6 +1,6 @@
 "use client"
 
-import { decrement, increment, incrementByAmount } from "@/redux/features/counter/counterSlice"
+import { decrement, increment, incrementByAmount, reset } from "@/redux/features/counter/counterSlice"
 import { useAppDispatch, useAppSelector } from "@/redux/hooks"
 import Link from "next/link"
 import { useState } from "react"
@@ -37,6 +37,8 @@ export default function Counter() {
                     Decrement
                 </button>
 
+
+
                 <div className="flex gap-2">
                     <button
                         onClick={() => dispatch(incrementByAmount(amount))}
@@ -51,6 +53,13 @@ export default function Counter() {
                         className="border border-black rounded-sm p-1 w-28"
                     />
                 </div>
+
+                <button
+                    onClick={() => dispatch(reset())}
+                    className={buttonStyle}
+                >
+                    Reset
+                </button>
             </div>
 
             <div className="m-2 mt-4">
