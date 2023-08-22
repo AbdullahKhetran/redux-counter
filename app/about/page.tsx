@@ -7,13 +7,13 @@ export default function AboutPage() {
   const count = useAppSelector((state) => state.counter.value)
   return (
     <div>
-      <div>
+      <div className="m-2">
         <h1>This is about page</h1>
-        The counter value is {count}
+        <p>The counter value is <strong>{count}</strong></p>
       </div>
 
-      <div>
-        <Link href={"/"}>
+      <div className="m-2">
+        <Link href={"/"} className="text-blue-600 text-lg">
           Home Page
         </Link>
       </div>

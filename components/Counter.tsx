@@ -6,7 +6,7 @@ import Link from "next/link"
 import { useState } from "react"
 
 export default function Counter() {
-    const buttonStyle = "border border-black rounded-md p-1 hover:bg-gray-300"
+    const buttonStyle = "border border-black rounded-sm p-1 hover:bg-gray-300"
 
     // Add "add amount" button and its logic
     const [amount, setAmount] = useState(0)
@@ -17,7 +17,6 @@ export default function Counter() {
 
     return (
         <div>
-
 
             <div className="flex flex-col items-start gap-2 m-2">
 
@@ -54,8 +53,8 @@ export default function Counter() {
                 </div>
             </div>
 
-            <div>
-                <Link href={"/about"}>
+            <div className="m-2 mt-4">
+                <Link href={"/about"} className="text-blue-600 text-lg">
                     About Page
                 </Link>
             </div>
