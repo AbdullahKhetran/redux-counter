@@ -5,6 +5,7 @@ import { useAppDispatch, useAppSelector } from "@/redux/hooks"
 import Link from "next/link"
 import { useState } from "react"
 import Count from "./Count"
+import Header from "./Header"
 
 export default function Counter() {
     const buttonStyle = "border border-black rounded-sm p-1 hover:bg-gray-300"
@@ -17,7 +18,9 @@ export default function Counter() {
     const dispatch = useAppDispatch()
 
     return (
-        <div>
+        <div className="m-2">
+
+            <Header />
 
             <div className="flex flex-col items-start gap-2 m-2">
 
@@ -64,11 +67,7 @@ export default function Counter() {
                 </button>
             </div>
 
-            <div className="m-2 mt-4">
-                <Link href={"/about"} className="text-blue-600 text-lg">
-                    About Page
-                </Link>
-            </div>
+
         </div>
     )
 }
