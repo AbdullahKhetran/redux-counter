@@ -4,6 +4,7 @@ import { decrement, increment, incrementByAmount, reset } from "@/redux/features
 import { useAppDispatch, useAppSelector } from "@/redux/hooks"
 import Link from "next/link"
 import { useState } from "react"
+import Count from "./Count"
 
 export default function Counter() {
     const buttonStyle = "border border-black rounded-sm p-1 hover:bg-gray-300"
@@ -20,7 +21,8 @@ export default function Counter() {
 
             <div className="flex flex-col items-start gap-2 m-2">
 
-                <p className="text-2xl">Count: {count}</p>
+
+                <Count />
 
                 <button
                     onClick={() => dispatch(increment())}
